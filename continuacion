@@ -1,0 +1,93 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int opcion1 ;
+    string opcion;
+    string personaje;
+
+    cout << "Bienvenido a su juego de Monkey King" << endl;
+    cout << "Digite su nombre de jugador: " << endl;
+    cin >> personaje;
+    cout << "Bienvenido " << personaje << ". El juego consiste en luchar con distintos jefes de nivel. El juego consiste en 10 niveles y cada uno tiene su respectivo jefe de nivel. Tienes 3 vidas. Si necesitas mas informacion escribe 'si' o 'no': " << endl;
+    cin >> opcion;
+
+    do
+    {
+
+        if (opcion == "si")
+        {
+            cout << "el juego consta de varias opciones a elegir , cada opcion tiene respectivos puntos que a al hora de finalizar se sumaran encontraras diferentes gefes y diferentes opciones" << endl;
+        }
+        else if (opcion == "no")
+        {
+            cout << "Su juego empieza en breve" << endl;
+        }
+        else
+        {
+            cout << "Digite una opcion valida " << endl;
+        }
+        cout << "necesitas mas ayuda?" << endl;
+        cout << "si" << endl;
+        cout << " no" << endl;
+        cin >> opcion;
+    } while (opcion == "si");
+    cout << personaje << " "
+                         "tu rival es INFERNUS "
+                         " "
+                         "Tu rival lanzo espirales de fuego, Que piensas hacer?"
+         << endl;
+    cout << "1. Usar una pared que esta cerca tuyo como defensa"<< endl;
+    cout << "2. Esquivarlo" << endl;
+    cout << "3. Contra atacar con otra espiral de fuego" << endl;
+    cin >> opcion1;
+   
+   switch (opcion1)
+   {
+   case 1 : cout<<"lograste defenderte y lograste entrar a una casa, mas 10 puntos";
+   cout<< "En esa casa encontraste arma especial resulta ser una espada pero solo la puedes usar una vez , Que haces? "<<endl;
+   cout<<"1. usarla contra INFERNUS"<<endl;
+   cout<<"2. Guardarla para mas tarde"<<endl;
+   cout<<"3. Dejarla tirada"<<endl;    
+   cin>>opcion1;
+   
+   if (opcion1 == 1 )
+   {
+    cout<<"Haz logrado bajar bajarle mas de la mitad de la vida,mas 10 puntos";
+   }
+   else if (opcion1 == 2)
+   {
+    cout<<"Seguis corriendo hasta una zona mas segura por el momento, mas 6";
+   }
+   else if (opcion1 == 3)
+   {
+    cout<<"La dejaste tirada pero el te encontro y te tiro un espiral de fuego y te afecto , -7";
+   }
+   
+
+
+   
+   ;break;
+
+   
+
+
+
+
+
+
+
+
+   case 2 : cout<<"lograste esquivarlo pero te lastimaste un poco, mas 7 puntos"<<endl; break;
+   case 3 : cout<<"ni que fueras dragon, mas 0 puntos,  GRACIAS POR JUGAR"<<endl; break;
+   
+   default:
+    break;
+   }
+
+
+
+
+    return 0;
+}
